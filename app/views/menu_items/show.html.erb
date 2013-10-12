@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 	<h2><%= @menu_item.name %>	<%= @menu_item.price %>
+
 </h2>
 
-<%=@menu_item.name%>
-<%=@ingredients.each do |ingredient|
-	<%= ingredient.name %> 
-	<% end %>
-	
+ <% @ingredients.each do |ingredient| %>
+      <tr>
+        <td><p><%= ingredient.name %></p></td
+
+<%end%>
 
 <%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
 <%= link_to 'Back', menu_items_path %>

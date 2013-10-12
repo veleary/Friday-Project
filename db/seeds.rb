@@ -23,11 +23,11 @@ Recipe.create(menu_item: item1, ingredient: ingredient2)
 Recipe.create(menu_item: item1, ingredient: ingredient3)
 
 Recipe.create(menu_item: item2, ingredient: ingredient1)
-Recipe.create(menu_item: item1, ingredient: ingredient2)
-Recipe.create(menu_item: item1, ingredient: ingredient3)
-Recipe.create(menu_item: item1, ingredient: ingredient4)
+Recipe.create(menu_item: item2, ingredient: ingredient2)
+Recipe.create(menu_item: item2, ingredient: ingredient3)
+Recipe.create(menu_item: item2, ingredient: ingredient4)
 
-Recipe.create(menu_item: item1, ingredient: ingredient2)
-Recipe.create(menu_item: item1, ingredient: ingredient4)
+Recipe.create(menu_item: item3, ingredient: ingredient2)
+Recipe.create(menu_item: item3, ingredient: ingredient4)
 
 

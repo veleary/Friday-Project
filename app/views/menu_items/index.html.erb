@@ -14,7 +14,10 @@
       <tr>
         <td><p><%= menu_item.name %></p></td>
         <td><p><%= menu_item.price %></p></td>
-        <td><p><% menu_item.id%>
+        <td><p><%= render_ingredient_names(menu_item)%>
+
+
+
         <td><%= link_to 'Show', menu_item %></td>
 
         <td><%= link_to 'Edit', edit_menu_item_path(menu_item) %></td>
