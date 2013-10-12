@@ -1,20 +1,17 @@
 class IngredientsController < ApplicationController
   before_action :set_menu_item, only: [:show, :edit, :update, :destroy]
   def create
-    @menu_item = MenuItem.find(params[:menu_item_id])
-
-    @ingredient = @menu_item.Ingredients.new(ingredient_params)
+    @ingredient = @Ingredient.new(ingredient_params)
+  end
+  
+  def show
   end
   
 
   private
 
-  def set_menu_item
-    @menu_item = MenuItem.find(params[:id])
-  end
-
-  def menu_item_params
-    params.require(:menu_item).permit(:name)
+  def ingredient_params
+    params.require(:ingredient).permit(:name)
   end
 
 end

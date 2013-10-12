@@ -32,5 +32,7 @@ ActiveRecord::Schema.define(version: 20131012143756) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+  add_index "recipes", ["ingredient_id"], name: "index_recipes_on_ingredient_id"
++  add_index "recipes", ["menu_item_id"], name: "index_recipes_on_menu_item_id"
 
 end
