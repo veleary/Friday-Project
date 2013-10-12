@@ -16,7 +16,7 @@
         <td><p><%= menu_item.price %></p></td>
         <td><p><% menu_item.id%>
         <td><%= link_to 'Show', menu_item %></td>
-        
+
         <td><%= link_to 'Edit', edit_menu_item_path(menu_item) %></td>
         <td><%= link_to 'Destroy', menu_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -25,5 +25,14 @@
 </table>
 
 <br>
+<h1>New Menu Item</h1>
+<label>Name</label>
 
-<%= link_to 'New Menu item', new_menu_item_path %>
+<label>Price</label>
+
+<label>Ingredients</label>
+<td><%= link_to 'Add Item', new_menu_item_path%>
+  </td>
+
+
+<%= link_to 'Back', menu_items_path %>
