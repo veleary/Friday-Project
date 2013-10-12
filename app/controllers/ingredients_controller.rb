@@ -7,8 +7,14 @@ class IngredientsController < ApplicationController
   end
   
 
-  def show
-    @ingredient = Ingredient.find(params[:id])
+  private
+
+  def set_menu_item
+    @menu_item = MenuItem.find(params[:id])
+  end
+
+  def menu_item_params
+    params.require(:menu_item).permit(:name)
   end
 
 end
