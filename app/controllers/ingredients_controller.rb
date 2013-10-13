@@ -1,5 +1,7 @@
 class IngredientsController < ApplicationController
   before_action :set_ingredient, only: [:show, :edit, :update, :destroy]
+  
+
   def create
     @ingredient = @Ingredient.new(ingredient_params)
     respond_to do |format|

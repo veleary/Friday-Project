@@ -10,7 +10,8 @@ class MenuItemsController < ApplicationController
   # GET /menu_items/1
   # GET /menu_items/1.json
   def show
-    @ingredients = @menu_item.ingredients
+    @menu_item 
+    @ingredients = @menu_item.ingredients.name
   end
 
   # GET /menu_items/new
@@ -21,6 +22,7 @@ class MenuItemsController < ApplicationController
 
   # GET /menu_items/1/edit
   def edit
+
   end
 
   # POST /menu_items
@@ -66,7 +68,7 @@ class MenuItemsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_menu_item
-      @menu_item = MenuItem.find(params[:id])
+      @menu_item = MenuItem.find_by_id(params[:id])
     end
 
     

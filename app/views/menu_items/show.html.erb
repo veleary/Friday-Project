@@ -3,11 +3,8 @@
 
 </h2>
 
- <% @ingredients.each do |ingredient| %>
-      <tr>
-        <td><p><%= ingredient.name %></p></td
 
-<%end%>
+<%= render_ingredient_names(@menu_item)%>
 
-<%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
+<%= link_to 'Edit',  edit_menu_item_path , @edit_menu_item_path %> |
 <%= link_to 'Back', menu_items_path %>
