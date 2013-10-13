@@ -39,6 +39,8 @@ gem 'hirb'
 
 gem 'zurb-foundation'
 
+gem 'compass'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
