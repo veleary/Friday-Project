@@ -16,7 +16,7 @@
 
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-  	<%= stylesheet_link_tag    "foundation" %>
+  	<%= stylesheet_link_tag    "foundation_and_overrides.scss" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
@@ -26,6 +26,6 @@
     <%= yield %>
 
     
-    <%= javascript_include_tag "foundation" %>
+    <%= javascript_include_tag "foundation_and_overrides.scss" %>
   </body>
 </html>
